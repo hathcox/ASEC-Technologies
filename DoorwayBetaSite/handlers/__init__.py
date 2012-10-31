@@ -23,13 +23,18 @@ from tornado.web import Application
 from tornado.web import StaticFileHandler 
 from os import urandom, path
 from base64 import b64encode
-from handlers.BaseHandler import DefaultHandler
+from handlers.BaseHandlers import *
+from handlers.PublicHandlers import *
+from handlers.UserHandlers import *
+from modules.Menu import Menu
+from modules.Recaptcha import Recaptcha
+from models import dbsession
 #Don't remove this comment, this is used as a pointhook to magically generate more handlers
 #HANDLER_IMPORT_POINT_HOOK
 
 logging.basicConfig(format = '[%(levelname)s] %(asctime)s - %(message)s', level = logging.DEBUG)
 
-fileLogger = logging.FileHandler(filename = 'Doorway.log')
+fileLogger = logging.FileHandler(filename = 'BlackBook.log')
 fileLogger.setLevel(logging.DEBUG)
 logging.getLogger('').addHandler(fileLogger)
 
@@ -37,11 +42,26 @@ application = Application([
         #Don't remove this comment, this is used as a pointhook to magically generate more handlers
         #HANDLER_APPLICATION_POINT_HOOK
 
+        # Public handlers - Serves all public pages
+        (r'/', WelcomeHandler),
+        (r'/login', LoginHandler, {'dbsession': dbsession}),
+        (r'/register',
+            RegistrationHandler, {'dbsession': dbsession}),
+        (r'/about', AboutHandler),
+        (r'/logout', LogoutHandler),
+
+        #User Handlers - Used for login / logout / settings
+        (r'/user', HomeHandler, {'dbsession': dbsession}),
+        (r'/download', DownloadHandler, {'dbsession': dbsession}),
+        (r'/feedback', FeedbackHandler, {'dbsession': dbsession}),
+        (r'/settings', SettingsHandler, {'dbsession': dbsession}),
+
         #Static Handlers - Serves static CSS, JavaScript and image files
         (r'/static/(.*)', StaticFileHandler, {'path': 'static'}),
       
-        #This is the Default Handler generated for you!
-      	(r'/(.*)', DefaultHandler)
+        #Misc Handlers
+        (r'/robots.txt', RobotsHandler),
+        (r'/(.*)', NotFoundHandler)
 ],
 
     # Template directory
@@ -50,9 +70,18 @@ application = Application([
     # Randomly generated secret key
     cookie_secret = b64encode(urandom(64)),
 
+    #Register UI modules
+    ui_modules={"Menu": Menu, "Recaptcha": Recaptcha},
+
     # Debug mode
     debug = True,
-    
+
+    # Enable XSRF forms (not optional)
+    xsrf_cookies=True,
+                  
+    # Milli-Seconds between session clean up
+    clean_up_timeout=int(60 * 1000),
+
     # Application version
     version = '0.0.1'
 )

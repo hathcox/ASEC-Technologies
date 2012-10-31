@@ -19,16 +19,31 @@
 """
 
 from sys import argv
+from datetime import datetime
 from handlers import start_game
+
+current_time = lambda: str(datetime.now()).split(' ')[1].split('.')[0]
 
 def serve():
     """
     serves the application
     ----------------------
     """
-    print "Now starting Doorway!"
+    print "Now starting Doorway Beta Site!"
     start_game()
 
-options = ['serve']
+def create():
+    ''' Creates/bootstraps the database '''
+    from libs.ConfigManager import ConfigManager  # Sets up logging
+    from models import __create__, boot_strap
+    print('%s : Creating the database ... ' %
+          current_time())
+    __create__()
+    if len(argv) == 3 and (argv[2] == 'bootstrap' or argv[2] == '-b'):
+        print('\n\n\n' +
+            '%s : Bootstrapping the database ... \n' % current_time())
+        boot_strap()
+
+options = ['serve', 'create']
 if argv[1] in options:
     eval(argv[1])()

@@ -24,19 +24,40 @@ from sqlalchemy import create_engine
 from sqlalchemy import Column, ForeignKey, Table
 from sqlalchemy.types import Integer
 from sqlalchemy.orm import sessionmaker
-from models.BaseGameObject import BaseObject
+from models.BaseObject import BaseObject
+from libs.ConfigManager import *
 
 metadata = BaseObject.metadata
 
 # set the connection string here
-engine = create_engine('mysql://user:password@localhost/Doorway')
+config = ConfigManager.Instance()
+db_connection = 'mysql://%s:%s@%s/%s' % (
+    config.db_user, config.db_password, config.db_server, config.db_name)
+engine = create_engine(db_connection)
 Session = sessionmaker(bind=engine, autocommit=True)
+
+#User <-> User join table for friends
+association_table = Table('user_friend', BaseObject.metadata,
+                          Column('user_id',
+                                 Integer, ForeignKey('user.id'), nullable=False),
+                          Column('friend_id',
+                                 Integer, ForeignKey('user.id'), nullable=False)
+                          )
 
 # import the dbsession instance to execute queries on your database
 dbsession = Session(autoflush = True)
 
 # import models.
 from models.BaseObject import BaseObject
+from models.User import User
+from models.Post import Post
+from models.Comment import Comment
+from models.Permission import Permission
+from models.Tag import Tag
 
 # calling this will create the tables at the database
 __create__ = lambda: (setattr(engine, 'echo', True), metadata.create_all(engine))
+
+# Bootstrap the databases
+def boot_strap():
+    import setup.bootstrap
