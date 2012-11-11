@@ -6602,3 +6602,650 @@ Successful login: user from 127.0.0.1
 ./handlers/UserHandlers.py modified; restarting server
 ./handlers/UserHandlers.py modified; restarting server
 ./handlers/UserHandlers.py modified; restarting server
+Invalid cookie signature 'YkFKaWlqWXFhdTg4RC92cko3OHV4UVRkZXJhVFFsdGs=|1351661610|eb769fb351cde1fccda7b6bb7233c9675c580ab2'
+200 GET / (127.0.0.1) 10.15ms
+404 GET /static/css/animate.css (127.0.0.1) 1.25ms
+304 GET /static/css/bootstrap.min.css (127.0.0.1) 7.53ms
+304 GET /static/css/bootstrap-responsive.css (127.0.0.1) 0.62ms
+404 GET /static/css/docs.css (127.0.0.1) 0.65ms
+304 GET /static/js/jquery.js (127.0.0.1) 0.68ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.63ms
+304 GET /static/js/bootstrap.min.js (127.0.0.1) 0.91ms
+404 GET /static/favicon.ico (127.0.0.1) 0.95ms
+Invalid cookie signature 'YkFKaWlqWXFhdTg4RC92cko3OHV4UVRkZXJhVFFsdGs=|1351661610|eb769fb351cde1fccda7b6bb7233c9675c580ab2'
+304 GET /login (127.0.0.1) 10.83ms
+404 GET /static/css/animate.css (127.0.0.1) 1.26ms
+404 GET /static/css/docs.css (127.0.0.1) 0.57ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.48ms
+404 GET /static/favicon.ico (127.0.0.1) 0.68ms
+Invalid cookie signature 'YkFKaWlqWXFhdTg4RC92cko3OHV4UVRkZXJhVFFsdGs=|1351661610|eb769fb351cde1fccda7b6bb7233c9675c580ab2'
+200 GET /register (127.0.0.1) 14.83ms
+404 GET /static/css/animate.css (127.0.0.1) 1.19ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.54ms
+404 GET /static/css/docs.css (127.0.0.1) 0.56ms
+404 GET /static/favicon.ico (127.0.0.1) 0.68ms
+Invalid cookie signature 'YkFKaWlqWXFhdTg4RC92cko3OHV4UVRkZXJhVFFsdGs=|1351661610|eb769fb351cde1fccda7b6bb7233c9675c580ab2'
+200 GET /about (127.0.0.1) 9.12ms
+404 GET /static/css/animate.css (127.0.0.1) 1.13ms
+404 GET /static/css/docs.css (127.0.0.1) 0.60ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.52ms
+404 GET /static/favicon.ico (127.0.0.1) 0.71ms
+Invalid cookie signature 'YkFKaWlqWXFhdTg4RC92cko3OHV4UVRkZXJhVFFsdGs=|1351661610|eb769fb351cde1fccda7b6bb7233c9675c580ab2'
+304 GET /login (127.0.0.1) 7.99ms
+404 GET /static/css/animate.css (127.0.0.1) 1.25ms
+404 GET /static/css/docs.css (127.0.0.1) 0.66ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.64ms
+404 GET /static/favicon.ico (127.0.0.1) 0.74ms
+Successful login: user from 127.0.0.1
+302 POST /login (127.0.0.1) 105.06ms
+304 GET /user (127.0.0.1) 28.85ms
+404 GET /static/css/animate.css (127.0.0.1) 1.28ms
+404 GET /static/css/docs.css (127.0.0.1) 0.58ms
+404 GET /static/js/notifier.js (127.0.0.1) 1.19ms
+404 GET /static/favicon.ico (127.0.0.1) 0.66ms
+304 GET /download (127.0.0.1) 30.06ms
+404 GET /static/css/animate.css (127.0.0.1) 1.31ms
+404 GET /static/css/docs.css (127.0.0.1) 0.64ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.47ms
+404 GET /static/favicon.ico (127.0.0.1) 0.60ms
+304 GET /feedback (127.0.0.1) 19.13ms
+404 GET /static/css/animate.css (127.0.0.1) 1.12ms
+404 GET /static/css/docs.css (127.0.0.1) 0.62ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.52ms
+404 GET /static/favicon.ico (127.0.0.1) 0.60ms
+200 GET /about (127.0.0.1) 17.14ms
+404 GET /static/css/animate.css (127.0.0.1) 1.75ms
+404 GET /static/css/docs.css (127.0.0.1) 0.57ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.55ms
+404 GET /static/favicon.ico (127.0.0.1) 0.66ms
+200 GET /settings (127.0.0.1) 38.87ms
+404 GET /static/css/animate.css (127.0.0.1) 1.22ms
+404 GET /static/css/docs.css (127.0.0.1) 0.61ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.53ms
+404 GET /static/favicon.ico (127.0.0.1) 0.59ms
+304 GET /feedback (127.0.0.1) 35.04ms
+404 GET /static/css/animate.css (127.0.0.1) 1.26ms
+404 GET /static/css/docs.css (127.0.0.1) 0.55ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.51ms
+404 GET /static/favicon.ico (127.0.0.1) 0.80ms
+200 POST /feedback (127.0.0.1) 30.57ms
+404 GET /static/css/animate.css (127.0.0.1) 2.20ms
+404 GET /static/css/docs.css (127.0.0.1) 0.64ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.67ms
+404 GET /static/favicon.ico (127.0.0.1) 0.62ms
+200 GET / (127.0.0.1) 12.36ms
+404 GET /static/css/animate.css (127.0.0.1) 1.29ms
+404 GET /static/css/docs.css (127.0.0.1) 0.83ms
+404 GET /static/js/notifier.js (127.0.0.1) 1.00ms
+404 GET /static/favicon.ico (127.0.0.1) 0.61ms
+200 GET / (127.0.0.1) 18.90ms
+404 GET /static/css/animate.css (127.0.0.1) 1.83ms
+404 GET /static/css/docs.css (127.0.0.1) 0.63ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.57ms
+304 GET /static/img/doorway.jpg (127.0.0.1) 0.71ms
+304 GET / (127.0.0.1) 13.85ms
+404 GET /static/css/animate.css (127.0.0.1) 4.47ms
+404 GET /static/css/docs.css (127.0.0.1) 0.64ms
+404 GET /static/js/notifier.js (127.0.0.1) 1.18ms
+404 GET /static/favicon.ico (127.0.0.1) 1.03ms
+200 GET http://start.ubuntu.com/11.10/Google/?sourceid=hp (127.0.0.1) 20.79ms
+200 GET http://sd/ (127.0.0.1) 10.15ms
+404 GET http://sd/static/css/animate.css (127.0.0.1) 2.26ms
+200 GET http://sd/static/css/bootstrap.min.css (127.0.0.1) 3.68ms
+200 GET http://sd/static/css/bootstrap-responsive.css (127.0.0.1) 2.51ms
+404 GET http://sd/static/css/docs.css (127.0.0.1) 0.58ms
+200 GET http://sd/static/js/jquery.js (127.0.0.1) 10.01ms
+200 GET http://sd/static/js/bootstrap.min.js (127.0.0.1) 1.76ms
+404 GET http://sd/static/js/notifier.js (127.0.0.1) 0.88ms
+404 GET http://sd/static/favicon.ico (127.0.0.1) 0.65ms
+404 GET http://sd/static/js/notifier.js (127.0.0.1) 0.57ms
+200 GET http://sd/static/img/doorway.jpg (127.0.0.1) 18.79ms
+200 GET http://beckteluat.dirtbags.net/ (127.0.0.1) 9.10ms
+404 GET http://beckteluat.dirtbags.net/static/css/animate.css (127.0.0.1) 7.96ms
+200 GET http://beckteluat.dirtbags.net/static/js/jquery.js (127.0.0.1) 3.47ms
+404 GET http://beckteluat.dirtbags.net/static/js/notifier.js (127.0.0.1) 0.69ms
+200 GET http://beckteluat.dirtbags.net/static/js/bootstrap.min.js (127.0.0.1) 1.77ms
+404 GET http://beckteluat.dirtbags.net/static/css/docs.css (127.0.0.1) 0.58ms
+200 GET http://beckteluat.dirtbags.net/static/css/bootstrap.min.css (127.0.0.1) 2.54ms
+200 GET http://beckteluat.dirtbags.net/static/css/bootstrap-responsive.css (127.0.0.1) 2.14ms
+404 GET http://beckteluat.dirtbags.net/static/favicon.ico (127.0.0.1) 0.58ms
+404 GET http://beckteluat.dirtbags.net/static/js/notifier.js (127.0.0.1) 0.65ms
+200 GET http://beckteluat.dirtbags.net/static/img/doorway.jpg (127.0.0.1) 14.44ms
+403 POST http://safebrowsing.clients.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=16.0.1&pver=2.2&wrkey=AKEgNitBbJcPe6RXOe1VY-MVWr4F1miC9GvTdIbk4NjsYXZB140rBGrJKmm0UgdHNaIM4sq8Q7ZrYgdXX9c3JkeRa63n7aN6VQ== (127.0.0.1): '_xsrf' argument missing from POST
+403 POST http://safebrowsing.clients.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=16.0.1&pver=2.2&wrkey=AKEgNitBbJcPe6RXOe1VY-MVWr4F1miC9GvTdIbk4NjsYXZB140rBGrJKmm0UgdHNaIM4sq8Q7ZrYgdXX9c3JkeRa63n7aN6VQ== (127.0.0.1) 2.16ms
+403 POST http://safebrowsing.clients.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=16.0.1&pver=2.2&wrkey=AKEgNitBbJcPe6RXOe1VY-MVWr4F1miC9GvTdIbk4NjsYXZB140rBGrJKmm0UgdHNaIM4sq8Q7ZrYgdXX9c3JkeRa63n7aN6VQ== (127.0.0.1): '_xsrf' argument missing from POST
+403 POST http://safebrowsing.clients.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=16.0.1&pver=2.2&wrkey=AKEgNitBbJcPe6RXOe1VY-MVWr4F1miC9GvTdIbk4NjsYXZB140rBGrJKmm0UgdHNaIM4sq8Q7ZrYgdXX9c3JkeRa63n7aN6VQ== (127.0.0.1) 1.97ms
+200 GET http://bechteluat.dirtbags.net/js/19ea.1239.ab36.ba23/ (127.0.0.1) 19.86ms
+404 GET http://bechteluat.dirtbags.net/static/css/animate.css (127.0.0.1) 1.80ms
+200 GET http://bechteluat.dirtbags.net/static/css/bootstrap.min.css (127.0.0.1) 2.67ms
+200 GET http://bechteluat.dirtbags.net/static/css/bootstrap-responsive.css (127.0.0.1) 1.65ms
+404 GET http://bechteluat.dirtbags.net/static/css/docs.css (127.0.0.1) 2.43ms
+200 GET http://bechteluat.dirtbags.net/static/js/jquery.js (127.0.0.1) 8.63ms
+404 GET http://bechteluat.dirtbags.net/static/js/notifier.js (127.0.0.1) 1.31ms
+200 GET http://bechteluat.dirtbags.net/static/js/bootstrap.min.js (127.0.0.1) 1.80ms
+404 GET http://bechteluat.dirtbags.net/static/favicon.ico (127.0.0.1) 0.63ms
+404 GET http://bechteluat.dirtbags.net/static/js/notifier.js (127.0.0.1) 0.63ms
+200 GET / (127.0.0.1) 10.14ms
+404 GET /static/css/animate.css (127.0.0.1) 1.99ms
+304 GET /static/css/bootstrap.min.css (127.0.0.1) 14.13ms
+304 GET /static/css/bootstrap-responsive.css (127.0.0.1) 0.76ms
+404 GET /static/css/docs.css (127.0.0.1) 0.66ms
+304 GET /static/js/jquery.js (127.0.0.1) 0.69ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.60ms
+304 GET /static/js/bootstrap.min.js (127.0.0.1) 0.67ms
+304 GET /static/img/doorway.jpg (127.0.0.1) 1.06ms
+404 GET /static/favicon.ico (127.0.0.1) 1.09ms
+200 GET /login (127.0.0.1) 10.75ms
+404 GET /static/css/animate.css (127.0.0.1) 1.27ms
+404 GET /static/css/docs.css (127.0.0.1) 0.58ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.51ms
+404 GET /static/favicon.ico (127.0.0.1) 0.74ms
+200 GET /about (127.0.0.1) 16.46ms
+404 GET /static/css/animate.css (127.0.0.1) 1.21ms
+404 GET /static/css/docs.css (127.0.0.1) 0.62ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.92ms
+404 GET /static/favicon.ico (127.0.0.1) 0.63ms
+304 GET /register (127.0.0.1) 16.72ms
+404 GET /static/css/animate.css (127.0.0.1) 1.11ms
+404 GET /static/css/docs.css (127.0.0.1) 0.54ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.48ms
+404 GET /static/favicon.ico (127.0.0.1) 0.60ms
+304 GET /login (127.0.0.1) 18.33ms
+404 GET /static/css/animate.css (127.0.0.1) 1.21ms
+404 GET /static/css/docs.css (127.0.0.1) 0.53ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.65ms
+404 GET /static/favicon.ico (127.0.0.1) 0.97ms
+Failed login attempt from 127.0.0.1
+200 POST /login (127.0.0.1) 113.33ms
+404 GET /static/css/animate.css (127.0.0.1) 1.20ms
+404 GET /static/css/docs.css (127.0.0.1) 0.64ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.63ms
+404 GET /static/favicon.ico (127.0.0.1) 0.76ms
+Successful login: user from 127.0.0.1
+302 POST /login (127.0.0.1) 69.28ms
+304 GET /user (127.0.0.1) 41.67ms
+404 GET /static/css/animate.css (127.0.0.1) 1.22ms
+404 GET /static/css/docs.css (127.0.0.1) 0.53ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.55ms
+200 GET /static/img/glyphicons-halflings-white.png (127.0.0.1) 1.62ms
+404 GET /static/favicon.ico (127.0.0.1) 0.62ms
+304 GET /download (127.0.0.1) 29.27ms
+404 GET /static/css/animate.css (127.0.0.1) 1.32ms
+404 GET /static/css/docs.css (127.0.0.1) 0.62ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.58ms
+404 GET /static/favicon.ico (127.0.0.1) 0.63ms
+200 GET /feedback (127.0.0.1) 26.18ms
+404 GET /static/css/animate.css (127.0.0.1) 1.28ms
+404 GET /static/css/docs.css (127.0.0.1) 0.58ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.59ms
+404 GET /static/favicon.ico (127.0.0.1) 1.01ms
+200 GET /about (127.0.0.1) 12.98ms
+404 GET /static/css/animate.css (127.0.0.1) 1.77ms
+404 GET /static/css/docs.css (127.0.0.1) 0.93ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.69ms
+404 GET /static/favicon.ico (127.0.0.1) 0.59ms
+304 GET /feedback (127.0.0.1) 35.49ms
+404 GET /static/css/animate.css (127.0.0.1) 1.20ms
+404 GET /static/css/docs.css (127.0.0.1) 0.58ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.61ms
+404 GET /static/favicon.ico (127.0.0.1) 0.82ms
+304 GET /download (127.0.0.1) 23.61ms
+404 GET /static/css/animate.css (127.0.0.1) 1.76ms
+404 GET /static/css/docs.css (127.0.0.1) 0.81ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.58ms
+404 GET /static/favicon.ico (127.0.0.1) 0.60ms
+200 GET / (127.0.0.1) 18.32ms
+404 GET /static/css/animate.css (127.0.0.1) 1.20ms
+404 GET /static/css/docs.css (127.0.0.1) 0.57ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.51ms
+404 GET /static/favicon.ico (127.0.0.1) 0.77ms
+304 GET /feedback (127.0.0.1) 17.37ms
+404 GET /static/css/animate.css (127.0.0.1) 1.31ms
+404 GET /static/css/docs.css (127.0.0.1) 0.61ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.66ms
+404 GET /static/favicon.ico (127.0.0.1) 0.97ms
+304 GET /download (127.0.0.1) 36.44ms
+404 GET /static/css/animate.css (127.0.0.1) 1.35ms
+404 GET /static/css/docs.css (127.0.0.1) 0.60ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.83ms
+404 GET /static/favicon.ico (127.0.0.1) 0.67ms
+304 GET / (127.0.0.1) 17.10ms
+404 GET /static/css/animate.css (127.0.0.1) 1.29ms
+404 GET /static/css/docs.css (127.0.0.1) 0.55ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.51ms
+404 GET /static/favicon.ico (127.0.0.1) 0.56ms
+304 GET /download (127.0.0.1) 20.11ms
+404 GET /static/css/animate.css (127.0.0.1) 1.39ms
+404 GET /static/css/docs.css (127.0.0.1) 0.67ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.54ms
+404 GET /static/favicon.ico (127.0.0.1) 0.65ms
+./models/User.py modified; restarting server
+SELECT DATABASE()
+()
+SHOW VARIABLES LIKE 'character_set%%'
+()
+SHOW VARIABLES LIKE 'lower_case_table_names'
+()
+SHOW COLLATION
+()
+SHOW VARIABLES LIKE 'sql_mode'
+()
+DESCRIBE `tag`
+()
+ROLLBACK
+DESCRIBE `user`
+()
+ROLLBACK
+DESCRIBE `user_friend`
+()
+ROLLBACK
+DESCRIBE `permission`
+()
+ROLLBACK
+DESCRIBE `post`
+()
+ROLLBACK
+DESCRIBE `comment`
+()
+ROLLBACK
+
+CREATE TABLE tag (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	name VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE user (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	_user_name VARCHAR(64) NOT NULL, 
+	approved BOOL, 
+	salt VARCHAR(32) NOT NULL, 
+	password VARCHAR(64), 
+	PRIMARY KEY (id), 
+	UNIQUE (_user_name), 
+	CHECK (approved IN (0, 1)), 
+	UNIQUE (salt)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE user_friend (
+	user_id INTEGER NOT NULL, 
+	friend_id INTEGER NOT NULL, 
+	FOREIGN KEY(user_id) REFERENCES user (id), 
+	FOREIGN KEY(friend_id) REFERENCES user (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE permission (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	permission_name VARCHAR(64) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE post (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	user_id INTEGER NOT NULL, 
+	title VARCHAR(255) NOT NULL, 
+	content VARCHAR(255) NOT NULL, 
+	post_type VARCHAR(255) NOT NULL, 
+	tag_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id), 
+	FOREIGN KEY(tag_id) REFERENCES tag (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE comment (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	post_id INTEGER NOT NULL, 
+	content VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(post_id) REFERENCES post (id)
+)
+
+
+()
+COMMIT
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password) VALUES (%s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 4, 56, 174689), 'admin', 1, '4jXyyNG271bsQSbR3mZFA8jvgg9mF2WH', None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('b2d5ab5a09d04d835804b65361191bd8eb77d9f9e631159c933b4cba8886b647', 1L)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+INSERT INTO permission (created, permission_name, user_id) VALUES (%s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 4, 56, 194732), 'admin', 1L)
+COMMIT
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password) VALUES (%s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 4, 56, 198939), 'user', 1, 'BmGZw2vwxL6f0RXMkvzNK+TBgF9FP7M5', None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(2L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('2be1ef8a60776e590a876fc455c58e7b38ab3da5d7cb5dd5ce035cf9331fb99b', 2L)
+COMMIT
+SELECT DATABASE()
+()
+SHOW VARIABLES LIKE 'character_set%%'
+()
+SHOW VARIABLES LIKE 'lower_case_table_names'
+()
+SHOW COLLATION
+()
+SHOW VARIABLES LIKE 'sql_mode'
+()
+DESCRIBE `user`
+()
+ROLLBACK
+DESCRIBE `tag`
+()
+ROLLBACK
+DESCRIBE `post`
+()
+ROLLBACK
+DESCRIBE `permission`
+()
+ROLLBACK
+DESCRIBE `user_friend`
+()
+ROLLBACK
+DESCRIBE `comment`
+()
+ROLLBACK
+
+CREATE TABLE user (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	_user_name VARCHAR(64) NOT NULL, 
+	approved BOOL, 
+	salt VARCHAR(32) NOT NULL, 
+	password VARCHAR(64), 
+	PRIMARY KEY (id), 
+	UNIQUE (_user_name), 
+	CHECK (approved IN (0, 1)), 
+	UNIQUE (salt)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE tag (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	name VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE post (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	user_id INTEGER NOT NULL, 
+	title VARCHAR(255) NOT NULL, 
+	content VARCHAR(255) NOT NULL, 
+	post_type VARCHAR(255) NOT NULL, 
+	tag_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id), 
+	FOREIGN KEY(tag_id) REFERENCES tag (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE permission (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	permission_name VARCHAR(64) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE user_friend (
+	user_id INTEGER NOT NULL, 
+	friend_id INTEGER NOT NULL, 
+	FOREIGN KEY(user_id) REFERENCES user (id), 
+	FOREIGN KEY(friend_id) REFERENCES user (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE comment (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	post_id INTEGER NOT NULL, 
+	content VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(post_id) REFERENCES post (id)
+)
+
+
+()
+COMMIT
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password) VALUES (%s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 9, 55, 392528), 'admin', 1, 'dsRuDTS9fVRLgoH4G+NBjRK+XEkVFxCp', None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('a360a9a2aff72a91d82bd208162ebab9b4f3daf7bf2d6db6530f2059bc7e8d6d', 1L)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+INSERT INTO permission (created, permission_name, user_id) VALUES (%s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 9, 55, 405940), 'admin', 1L)
+COMMIT
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password) VALUES (%s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 9, 55, 409806), 'user', 1, 'zV/Ac9ZMpmgWtootGLRjTzr/DY1h50je', None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(2L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('0410abed712cf9adbe47bfef4e10e48822da06b46099fee64a93acf87983426a', 2L)
+COMMIT
+SELECT DATABASE()
+()
+SHOW VARIABLES LIKE 'character_set%%'
+()
+SHOW VARIABLES LIKE 'lower_case_table_names'
+()
+SHOW COLLATION
+()
+SHOW VARIABLES LIKE 'sql_mode'
+()
+DESCRIBE `user`
+()
+ROLLBACK
+DESCRIBE `tag`
+()
+ROLLBACK
+DESCRIBE `user_friend`
+()
+ROLLBACK
+DESCRIBE `post`
+()
+ROLLBACK
+DESCRIBE `permission`
+()
+ROLLBACK
+DESCRIBE `comment`
+()
+ROLLBACK
+
+CREATE TABLE user (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	_user_name VARCHAR(64) NOT NULL, 
+	approved BOOL, 
+	salt VARCHAR(32) NOT NULL, 
+	password VARCHAR(64), 
+	PRIMARY KEY (id), 
+	UNIQUE (_user_name), 
+	CHECK (approved IN (0, 1)), 
+	UNIQUE (salt)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE tag (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	name VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE user_friend (
+	user_id INTEGER NOT NULL, 
+	friend_id INTEGER NOT NULL, 
+	FOREIGN KEY(user_id) REFERENCES user (id), 
+	FOREIGN KEY(friend_id) REFERENCES user (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE post (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	user_id INTEGER NOT NULL, 
+	title VARCHAR(255) NOT NULL, 
+	content VARCHAR(255) NOT NULL, 
+	post_type VARCHAR(255) NOT NULL, 
+	tag_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id), 
+	FOREIGN KEY(tag_id) REFERENCES tag (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE permission (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	permission_name VARCHAR(64) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE comment (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	post_id INTEGER NOT NULL, 
+	content VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(post_id) REFERENCES post (id)
+)
+
+
+()
+COMMIT
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password) VALUES (%s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 57, 50, 372547), 'admin', 1, 'xFODlHliNOJw0TN5eO6xn4MhUNGDqH0n', None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('34daf05d25b4973df519fb20f5d61344', 1L)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+INSERT INTO permission (created, permission_name, user_id) VALUES (%s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 57, 50, 385671), 'admin', 1L)
+COMMIT
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password) VALUES (%s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 10, 15, 57, 50, 389334), 'user', 1, 'Oxfl8FWSmGwDqIWwdmUgVEVnkQlrVFdo', None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt 
+FROM user 
+WHERE user.id = %s
+(2L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('2e547697c54f87866b01cb57b4804919', 2L)
+COMMIT

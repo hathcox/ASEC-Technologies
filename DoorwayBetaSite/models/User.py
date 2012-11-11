@@ -20,7 +20,7 @@ Created on Mar 12, 2012
 '''
 from os import urandom
 from base64 import b64encode
-from hashlib import sha256
+from hashlib import md5
 from sqlalchemy import Column, ForeignKey
 from sqlalchemy.orm import synonym, relationship, backref
 from sqlalchemy.types import Unicode,  Integer, Boolean
@@ -100,10 +100,8 @@ class User(BaseObject):
         This function will always return a unicode string, but can take an arg of
         any type not just ascii strings, the salt will always be unicode
         '''
-        sha = sha256()
+        sha = md5()
         sha.update(password + salt)
-        for count in range(0, 25000):
-            sha.update(sha.hexdigest() + str(count))
         return unicode(sha.hexdigest())
 
     @property
