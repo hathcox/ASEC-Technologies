@@ -29,7 +29,7 @@ all: Doorway\ Server
 Doorway\ Server: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc -L/usr/lib/mysql -o"Doorway Server" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc -m32 -L/usr/lib/mysql -o"Doorway Server" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

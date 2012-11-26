@@ -36,24 +36,13 @@ db_connection = 'mysql://%s:%s@%s/%s' % (
 engine = create_engine(db_connection)
 Session = sessionmaker(bind=engine, autocommit=True)
 
-#User <-> User join table for friends
-association_table = Table('user_friend', BaseObject.metadata,
-                          Column('user_id',
-                                 Integer, ForeignKey('user.id'), nullable=False),
-                          Column('friend_id',
-                                 Integer, ForeignKey('user.id'), nullable=False)
-                          )
-
 # import the dbsession instance to execute queries on your database
 dbsession = Session(autoflush = True)
 
 # import models.
 from models.BaseObject import BaseObject
 from models.User import User
-from models.Post import Post
-from models.Comment import Comment
 from models.Permission import Permission
-from models.Tag import Tag
 
 # calling this will create the tables at the database
 __create__ = lambda: (setattr(engine, 'echo', True), metadata.create_all(engine))

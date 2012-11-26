@@ -7249,3 +7249,174 @@ BEGIN (implicit)
 UPDATE user SET password=%s WHERE user.id = %s
 ('2e547697c54f87866b01cb57b4804919', 2L)
 COMMIT
+200 GET / (127.0.0.1) 14.57ms
+404 GET /static/css/animate.css (127.0.0.1) 2.04ms
+304 GET /static/css/bootstrap.min.css (127.0.0.1) 19.63ms
+304 GET /static/js/bootstrap.min.js (127.0.0.1) 0.70ms
+304 GET /static/css/bootstrap-responsive.css (127.0.0.1) 0.73ms
+404 GET /static/css/docs.css (127.0.0.1) 0.70ms
+304 GET /static/js/jquery.js (127.0.0.1) 0.75ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.66ms
+304 GET /static/img/doorway.jpg (127.0.0.1) 1.06ms
+404 GET /static/favicon.ico (127.0.0.1) 0.99ms
+200 GET /about (127.0.0.1) 8.74ms
+404 GET /static/css/animate.css (127.0.0.1) 1.24ms
+404 GET /static/css/docs.css (127.0.0.1) 0.59ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.48ms
+404 GET /static/favicon.ico (127.0.0.1) 0.64ms
+304 GET /register (127.0.0.1) 14.09ms
+404 GET /static/css/animate.css (127.0.0.1) 1.10ms
+404 GET /static/css/docs.css (127.0.0.1) 0.61ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.58ms
+404 GET /static/favicon.ico (127.0.0.1) 0.62ms
+304 GET /login (127.0.0.1) 11.18ms
+404 GET /static/css/animate.css (127.0.0.1) 1.09ms
+404 GET /static/css/docs.css (127.0.0.1) 0.63ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.53ms
+404 GET /static/favicon.ico (127.0.0.1) 1.69ms
+304 GET /register (127.0.0.1) 11.82ms
+404 GET /static/css/animate.css (127.0.0.1) 1.20ms
+404 GET /static/css/docs.css (127.0.0.1) 0.64ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.98ms
+404 GET /static/favicon.ico (127.0.0.1) 0.61ms
+304 GET /login (127.0.0.1) 16.65ms
+404 GET /static/css/animate.css (127.0.0.1) 1.15ms
+404 GET /static/css/docs.css (127.0.0.1) 0.52ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.51ms
+404 GET /static/favicon.ico (127.0.0.1) 0.67ms
+Successful login: user from 127.0.0.1
+302 POST /login (127.0.0.1) 27.35ms
+304 GET /user (127.0.0.1) 28.82ms
+404 GET /static/css/animate.css (127.0.0.1) 1.19ms
+404 GET /static/css/docs.css (127.0.0.1) 0.67ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.61ms
+200 GET /static/img/glyphicons-halflings-white.png (127.0.0.1) 1.25ms
+404 GET /static/favicon.ico (127.0.0.1) 0.61ms
+304 GET /feedback (127.0.0.1) 39.22ms
+404 GET /static/css/animate.css (127.0.0.1) 1.21ms
+404 GET /static/css/docs.css (127.0.0.1) 0.63ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.63ms
+404 GET /static/favicon.ico (127.0.0.1) 0.58ms
+304 GET /download (127.0.0.1) 30.54ms
+404 GET /static/css/animate.css (127.0.0.1) 1.59ms
+404 GET /static/css/docs.css (127.0.0.1) 0.68ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.53ms
+404 GET /static/favicon.ico (127.0.0.1) 0.59ms
+200 GET /about (127.0.0.1) 10.26ms
+404 GET /static/css/animate.css (127.0.0.1) 1.85ms
+404 GET /static/css/docs.css (127.0.0.1) 0.64ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.54ms
+404 GET /static/favicon.ico (127.0.0.1) 0.70ms
+304 GET /download (127.0.0.1) 24.85ms
+404 GET /static/css/animate.css (127.0.0.1) 1.37ms
+404 GET /static/css/docs.css (127.0.0.1) 0.56ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.46ms
+404 GET /static/favicon.ico (127.0.0.1) 0.59ms
+304 GET /feedback (127.0.0.1) 30.77ms
+404 GET /static/css/animate.css (127.0.0.1) 1.19ms
+404 GET /static/css/docs.css (127.0.0.1) 0.63ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.69ms
+404 GET /static/favicon.ico (127.0.0.1) 0.69ms
+304 GET /about (127.0.0.1) 13.74ms
+404 GET /static/css/animate.css (127.0.0.1) 6.25ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.79ms
+404 GET /static/css/docs.css (127.0.0.1) 0.56ms
+404 GET /static/favicon.ico (127.0.0.1) 0.69ms
+200 GET / (127.0.0.1) 16.64ms
+404 GET /static/css/animate.css (127.0.0.1) 1.28ms
+404 GET /static/css/docs.css (127.0.0.1) 0.63ms
+404 GET /static/js/notifier.js (127.0.0.1) 0.66ms
+404 GET /static/favicon.ico (127.0.0.1) 0.66ms
+SELECT DATABASE()
+()
+SHOW VARIABLES LIKE 'character_set%%'
+()
+SHOW VARIABLES LIKE 'lower_case_table_names'
+()
+SHOW COLLATION
+()
+SHOW VARIABLES LIKE 'sql_mode'
+()
+DESCRIBE `user`
+()
+ROLLBACK
+DESCRIBE `permission`
+()
+ROLLBACK
+
+CREATE TABLE user (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	_user_name VARCHAR(64) NOT NULL, 
+	approved BOOL, 
+	salt VARCHAR(32) NOT NULL, 
+	password VARCHAR(64), 
+	character_name VARCHAR(64), 
+	PRIMARY KEY (id), 
+	UNIQUE (_user_name), 
+	CHECK (approved IN (0, 1)), 
+	UNIQUE (salt)
+)
+
+
+()
+COMMIT
+
+CREATE TABLE permission (
+	id INTEGER NOT NULL AUTO_INCREMENT, 
+	created DATETIME, 
+	permission_name VARCHAR(64) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id)
+)
+
+
+()
+COMMIT
+SELECT DATABASE()
+()
+SHOW VARIABLES LIKE 'character_set%%'
+()
+SHOW VARIABLES LIKE 'lower_case_table_names'
+()
+SHOW COLLATION
+()
+SHOW VARIABLES LIKE 'sql_mode'
+()
+DESCRIBE `user`
+()
+DESCRIBE `permission`
+()
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password, character_name) VALUES (%s, %s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 25, 20, 2, 55, 767641), 'admin', 1, '0D/almzBHfvaT2AIRdsFP05S77L2Zdc8', None, None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt, user.character_name AS user_character_name 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('a837c2253ec985a8985b8fe5462bfcd9', 1L)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt, user.character_name AS user_character_name 
+FROM user 
+WHERE user.id = %s
+(1L,)
+BEGIN (implicit)
+INSERT INTO permission (created, permission_name, user_id) VALUES (%s, %s, %s)
+(datetime.datetime(2012, 11, 25, 20, 2, 55, 781559), 'admin', 1L)
+COMMIT
+BEGIN (implicit)
+INSERT INTO user (created, _user_name, approved, salt, password, character_name) VALUES (%s, %s, %s, %s, %s, %s)
+(datetime.datetime(2012, 11, 25, 20, 2, 55, 785530), 'user', 1, 'r1HxK6jeMI3x7PKv8Br+JuM+Pl8DSXTg', None, None)
+COMMIT
+SELECT user.password AS user_password, user.id AS user_id, user.created AS user_created, user._user_name AS user__user_name, user.approved AS user_approved, user.salt AS user_salt, user.character_name AS user_character_name 
+FROM user 
+WHERE user.id = %s
+(2L,)
+BEGIN (implicit)
+UPDATE user SET password=%s WHERE user.id = %s
+('0bb4a05fd21c13aa4af7f207cda59886', 2L)
+COMMIT

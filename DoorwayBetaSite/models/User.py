@@ -25,7 +25,7 @@ from sqlalchemy import Column, ForeignKey
 from sqlalchemy.orm import synonym, relationship, backref
 from sqlalchemy.types import Unicode,  Integer, Boolean
 from string import ascii_letters, digits
-from models import dbsession, Permission, Post
+from models import dbsession, Permission
 from models.BaseObject import BaseObject
 
 class User(BaseObject):
@@ -41,11 +41,10 @@ class User(BaseObject):
     approved = Column(Boolean, default=False)
     permissions = relationship("Permission", backref=backref(
         "User", lazy="joined"), cascade="all, delete-orphan")
-    posts = relationship("Post", backref=backref(
-        "User", lazy="joined"), cascade="all, delete-orphan")
     salt = Column(
         Unicode(32), unique=True, nullable=False, default=lambda: unicode(b64encode(urandom(24))))
     _password = Column('password', Unicode(64))
+    character_name = Column('character_name', Unicode(64))
     password = synonym('_password', descriptor=property(
         lambda self: self._password,
         lambda self, password: setattr(self, '_password',

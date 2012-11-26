@@ -18,6 +18,8 @@
 #define NAME_SIZE 64
 #define PASSWORD_SIZE 64
 #define AUTH_TOKEN "999999"
+#define AUTH_TOKEN_SIZE 7
+#define FAIL_TOKEN "000000"
 
 MYSQL *conn;
 MYSQL_RES *res;
@@ -47,6 +49,8 @@ int i, j, rv;
 
 struct addrinfo hints, *ai, *p;
 
+
+
 void *get_in_addr(struct sockaddr *sa) {
 	if (sa->sa_family == AF_INET) {
 		return &(((struct sockaddr_in*) sa)->sin_addr);
@@ -62,6 +66,7 @@ void print_hash(unsigned char hash[])
       printf("%02x",hash[idx]);
    printf("\n");
 }
+
 int loadPassword(int index,char* passwordBuffer,char* message) {
 	int counter = 0;
 	while(index < index+65) {
@@ -76,6 +81,40 @@ int loadPassword(int index,char* passwordBuffer,char* message) {
 		counter++;
 	}
 	passwordBuffer[64] = (char) 0x00;
+	return index;
+}
+
+int loadCharacterName(int index, char* passwordBuffer, char* message) {
+	int counter = 0;
+	while(index < index+65) {
+		// we user | to mark the end of a section
+		if(message[index] != (char) 0x7C) {
+			passwordBuffer[counter] = message[index];
+		} else {
+			passwordBuffer[counter] = (char) 0x00;
+			return index+1;
+		}
+		index++;
+		counter++;
+	}
+	passwordBuffer[64] = (char) 0x00;
+	return index;
+}
+
+int loadAuthToken(int index, char* tokenBuffer, char* message) {
+	int counter = 0;
+	while(index < index+8) {
+		// we use | to mark the end of a section
+		if(message[index] != (char) 0x7C) {
+			tokenBuffer[counter] = message[index];
+		} else {
+			tokenBuffer[counter] = (char) 0x00;
+			return index+1;
+		}
+		index++;
+		counter++;
+	}
+	tokenBuffer[8] = (char) 0x00;
 	return index;
 }
 
@@ -97,11 +136,34 @@ int loadName(char* nameBuffer, char* message) {
 
 void sendAuthToken() {
 	if (FD_ISSET(i, &master)) {
-		if (send(i, AUTH_TOKEN, 7, 0) == -1) {
+		if (send(i, AUTH_TOKEN, AUTH_TOKEN_SIZE, 0) == -1) {
 			perror("send");
 		}
 	}
 }
+
+void sendFailToken() {
+	if (FD_ISSET(i, &master)) {
+		if (send(i, FAIL_TOKEN, AUTH_TOKEN_SIZE, 0) == -1) {
+			perror("send");
+		}
+	}
+}
+
+int validateAuthToken(char* tokenBuffer) {
+	int index;
+	for(index=0; index < 7; index++) {
+		if (tokenBuffer[index] != (char) 0x39) {
+			return FALSE;
+		}
+	}
+	if (strlen(tokenBuffer) == 7) {
+		return TRUE;
+	} else {
+		return FALSE;
+	}
+}
+
 int checkHash(char* password, char* salt, char* attempt) {
 
 	int length = strlen(attempt) + strlen(salt);
@@ -134,6 +196,20 @@ int checkHash(char* password, char* salt, char* attempt) {
 	}
 }
 
+void setCharacterName(char* original, char* username) {
+	/* send SQL query */
+	startConnection();
+
+	char* nameBuffer [NAME_SIZE];
+
+	sprintf(nameBuffer, "update user set character_name = \"%s\" where _user_name = \"%s\" ", original, username);
+
+	if (mysql_query(conn, nameBuffer)) {
+		fprintf(stderr, "%s\n", mysql_error(conn));
+		exit(1);
+	}
+}
+
 //This is load the message of the wire and attempt to respond to correct message
 void parseMessage(char* message) {
 /*
@@ -163,15 +239,37 @@ void parseMessage(char* message) {
 
 		int result = validateUser(nameBuffer, passwordBuffer);
 		//Valid auth
-		if(index) {
+		if(result) {
 			printf("Valid Login, returning token\n");
 			sendAuthToken();
+		} else {
+			printf("Invalid Login Attempt!\n");
+			sendFailToken();
 		}
 
 	}
 	//Set name
 	if(message[0] == (char) 0x42) {
 		printf("B\n");
+		char* nameBuffer [NAME_SIZE+1];
+		char* authTokenBuffer [AUTH_TOKEN_SIZE+1];
+		char* characterNameBuffer [NAME_SIZE+1];
+
+		int index = loadName(nameBuffer, message);
+		index = loadAuthToken(index, authTokenBuffer, message);
+		index = loadCharacterName(index, characterNameBuffer, message);
+
+		printf("token name :%s\n", authTokenBuffer);
+
+		if (validateAuthToken(authTokenBuffer)) {
+			printf("Valid Auth Token\n");
+			setCharacterName(characterNameBuffer, nameBuffer);
+			sendAuthToken();
+		} else {
+			printf("Invalid Auth Token!\n");
+			sendFailToken();
+		}
+
 	}
 //	printf("%c\n", message[0]);
 
@@ -321,6 +419,7 @@ int main(void) {
 						FD_CLR(i, &master); // remove from master set
 					} else {
 						// we got some data from a client
+						parseMessage(buf);
 //						for (j = 0; j <= fdmax; j++) {
 //							// send to everyone!
 //							if (FD_ISSET(j, &master)) {
@@ -332,7 +431,6 @@ int main(void) {
 //								}
 //							}
 //						}
-						parseMessage(buf);
 					}
 				} // END handle data from client
 			} // END got new incoming connection
